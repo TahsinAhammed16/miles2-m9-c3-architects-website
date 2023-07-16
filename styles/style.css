@@ -1,0 +1,161 @@
+/* Universal section starts here.. */
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+:root {
+    --dark-01: #131313;
+    --dark-02: #424242;
+    --dark-03: #727272;
+}
+
+.btn-primary {
+    border-radius: 8px;
+    color: #FFF;
+    font-size: 1.25rem;
+    background: #FF900E;
+    padding: 20px 25px;
+    cursor: pointer;
+    border: none;
+}
+
+.desc-primary {
+    color: var(--dark-03);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* header section starts here.. */
+header {
+    background: rgba(8, 201, 127, 0.24);
+    padding: 50px 240px;
+}
+
+.nav-title {
+    color: var(--dark-01);
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+nav li a {
+    text-decoration: none;
+    color: var(--dark-02);
+}
+
+/* banner section starts here.. */
+.banner-content {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner-title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--dark-01);
+}
+
+.banner img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* main section starts here.. */
+main {
+    max-width: 1440px;
+    margin: 70px auto;
+}
+
+/* team section starts here.. */
+.team-container {
+    display: flex;
+    align-items: center;
+}
+
+.team-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.team-right-content {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.team-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.team-title .title-1st {
+    color: var(--dark-03);
+    font-weight: 500;
+}
+
+.team-title .title-2nd {
+    color: var(--dark-01);
+}
+
+.team-title .title-3rd {
+    color: #FF900E;
+}
+
+/* responsive media queries starts here.. */
+/* for small device */
+@media screen and (max-width: 576px) {
+    header {
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .team-container {
+        flex-direction: column-reverse;
+    }
+
+    .team-img-container {
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+    }
+
+    .team-right-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* for mid device */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    header {
+        padding: 50px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .team-container {
+        flex-direction: column-reverse;
+    }
+}
