@@ -242,8 +242,6 @@ main {
     text-align: center;
 }
 
-
-
 /* responsive media queries starts here.. */
 /* for small device */
 @media screen and (max-width: 576px) {
@@ -276,19 +274,19 @@ main {
         padding-right: 20px;
     }
 
-    /* confusion */
-    
+    .right-img {
+        margin: 0 auto;
+    }
+
     .right-img img {
-        max-width: 100%;
-        /* margin: -50px auto; */
-        position: static;
-        height: 300px;
-        bottom: 0;
+        width: 100%;
     }
 
     .ten-years-badge {
-
-    
+        width: auto;
+        left: 0;
+        bottom: 1rem;
+        padding: 10px;
     }
 
     .fact-card-container {
@@ -315,6 +313,21 @@ main {
 
     .team-container {
         flex-direction: column-reverse;
+    }
+
+    .right-img {
+        margin: 0 auto;
+    }
+
+    .right-img img {
+        width: 100%;
+    }
+
+    .ten-years-badge {
+        width: auto;
+        left: 0;
+        bottom: 1rem;
+        padding: 30px;
     }
 
     .fact-card-container {
